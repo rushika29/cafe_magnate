@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+:root{
+  --main-color:#bc9667;
+  --second-color:#edeae3;
+  --text-color:#363333;
+  --bg-color:#fff;
+  --box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%)
+}
+section{
+  padding: 50px 100px;
+}
+img{
+  width: 100%;
+}
+body{
+  color: var(--text-color);
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 100px;
+  transition: 0.5s linear;
+  background: var(--text-color);
+
+}
+.logo img{
+  width: 60px;
+}
+.nav{
+  display: flex;
+}
+.nav a{
+  padding: 8px 17px;
+  color: var(--bg-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav a:hover{
+  background: var(--main-color);
+  border-radius: 0.2rem;
+  transition: 0.2s all linear;
+}
+.home{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("C:\Users\ASUS\Desktop\cafe_website\bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: centre;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.home-text h1{
+  font-size: 3.4rem;
+  color: var(--main-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+.btn{
+  padding: 10px 40px;
+  border-radius: 0.3rem;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-weight: 500;
+}
+.btn:hover{
+  background: #8a6f4d;
+}
+.about{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(17rem,auto));
+  
+  gap: 1.5rem;
+}
+.about-img img{
+  border-radius: 0.5rem;
+
+}
+.about-text h2{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.about-text p{
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.1rem;
+}
+.heading{
+  text-align: center;
+}
+.heading h2{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.menu-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.menu-container .box{
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: #f1f1f1;
+  box-shadow: var(--box-shadow);
+}
+.menu-container img{
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 0.5rem;
+}
+.menu-container .box h3{
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0.5rem 0 0.5rem;
+}
+.footer{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1.5rem;
+  background-color: var(--text-color);
+}
+.footer-box h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+.footer-box li a{
+  color: var(--main-color);
+}
+.footer-box li a:hover{
+  color: var(--second-color);
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.contact span{
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+}
